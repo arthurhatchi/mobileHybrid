@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
@@ -24,3 +25,10 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+=======
+# mobileHybrid
+
+Module mobile hybrid - project
+
+Arthur Hatchiguian - groupe 8
+>>>>>>> 39823c856e330b45e4744d0b3f113ba645edada4
