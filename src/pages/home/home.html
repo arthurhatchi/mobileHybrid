@@ -6,9 +6,26 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+
+  <div id="floating-panel">
+    
+       <ion-item>
+           <ion-label fixed>Départ</ion-label>
+           <ion-input type="text" value="Paris" id="start" [(ngModel)]="start"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Arrivée</ion-label>
+            <ion-input type="text" value="Marseille" id="end" [(ngModel)]="end"></ion-input>
+      </ion-item>
+      <b>Transport: </b>
+    <select [(ngModel)]="travelMode" id="travelMode">
+        <option value="DRIVING">Voiture</option>
+        <option value="WALKING">A pied</option>
+        <option value="BICYCLING">Vélo</option>
+        <option value="TRANSIT">En commun</option>
+    </select><br>
+      <button ion-button (click)="buttonClick()">Calculate!</button>
+    </div>
+    <div #map id="map"></div>
 </ion-content>
