@@ -1,6 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
+import { NavParams } from 'ionic-angular';
 
 declare var google;
 
@@ -15,16 +16,19 @@ export class HomePage {
 
   @ViewChild('map') mapElement: ElementRef;
   map: any;
-  start = 'paris';
-  end = 'marseille';
-  travelMode = 'DRIVING';
+  start;
+  end;
+  travelMode;
   directionsService = new google.maps.DirectionsService;
   directionsDisplay = new google.maps.DirectionsRenderer;
   service = new google.maps.DistanceMatrixService();
   
   
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController,public params: NavParams) {
+    this.start = params.get('start');
+    this.end= params.get('end');
+    this.travelMode = params.get('travelMode');
+    this.calculateAndDisplayRoute();
   }
 
   ionViewDidLoad(){
@@ -40,6 +44,10 @@ export class HomePage {
     this.directionsDisplay.setMap(this.map);
   } 
 
+  travelClick(type){
+    this.travelMode = type;
+  }
+
   buttonClick() {
     if (this.start === "") {
         this.displayAlert('Veuillez choisir une ville de départ');  
@@ -47,8 +55,7 @@ export class HomePage {
         this.displayAlert('Veuillez choisir une ville d\'arrivée'); 
     } else {
         this.calculateAndDisplayRoute();
-    }
-        
+    }        
   }
         
   calculateAndDisplayRoute() {
@@ -74,7 +81,7 @@ export class HomePage {
             break
             
             default:
-            this.displayAlert('Erreur inconnue');
+            this.displayAlert('Erreur inconnue ' + status);
             break
         }      
         this.loading(false);
@@ -108,8 +115,6 @@ export class HomePage {
           }
       });
   }
-
-
 
   displayAlert(text:string) {
     window.alert(text);

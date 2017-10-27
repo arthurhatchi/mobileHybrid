@@ -1,0 +1,40 @@
+IndexPage {    
+    .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+        border-bottom-color: #dedede;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .searchPanel{  
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 5;
+          //background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+      //  text-align: center;
+      //  font-family: 'Roboto','sans-serif';
+        line-height: 20px;
+        padding-left: 10px;
+    }
+
+  #direction{
+    margin-left: 25%;
+    font-size: 40px;
+    color: red;
+    position: relative;
+    top: 50%;
+    transform: translateY(-34%);
+  }
+
+  .start{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .end{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}

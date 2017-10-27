@@ -1,0 +1,61 @@
+<!--
+  Generated template for the IndexPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>index</ion-title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div>
+        <div>
+          <ion-item class="start">
+              <ion-label fixed>Départ</ion-label>
+              <ion-input type="text" id="start" [(ngModel)]="start"></ion-input>
+              <button ion-button clear color="dark" type="button" item-right (click)="travelClick('DRIVING')">
+                  <ion-icon class="material-icons" item-right>my_location</ion-icon>
+              </button>
+          </ion-item>
+          <ion-item class="end">
+              <ion-label fixed>Arrivée</ion-label>
+              <ion-input type="text" id="end" [(ngModel)]="destination"></ion-input>
+              <button ion-button clear color="dark" type="button" item-right (click)="travelClick('DRIVING')">
+                  <ion-icon class="material-icons" item-right>my_location</ion-icon>
+              </button>
+        </ion-item>
+      <ion-row >
+          <ion-col text-center>
+              <div class="btn-group" >
+                  <button ion-button class="btn btn-primary" value="walk" (click)="travelClick('WALKING')"><i class="material-icons">directions_walk</i></button>
+                  <button ion-button class="btn btn-primary" value="walk" (click)="travelClick('BICYCLING')"><i class="material-icons">directions_bike</i></button>
+                  <button ion-button class="btn btn-primary" value="walk" (click)="travelClick('TRANSIT')"><i class="material-icons">directions_transit</i></button>
+                  <button ion-button class="btn btn-primary" value="walk" (click)="travelClick('DRIVING')"><i class="material-icons">directions_car</i></button>
+              </div>     
+              <i class="material-icons" id="direction" (click)="directionClick($event)">directions</i>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  <p>
+    selected: {{travelMode}}
+  </p>
+</ion-content>
