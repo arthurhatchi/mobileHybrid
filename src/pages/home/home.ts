@@ -2,6 +2,8 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 import { NavParams } from 'ionic-angular';
+import { FirebaseAnalytics } from '@ionic-native/firebase-analytics';
+import { LoadingController } from 'ionic-angular';
 
 declare var google;
 
@@ -22,9 +24,16 @@ export class HomePage {
   directionsService = new google.maps.DirectionsService;
   directionsDisplay = new google.maps.DirectionsRenderer;
   service = new google.maps.DistanceMatrixService();
+  loader = this.loadingCtrl.create({
+        content: 'Please wait...'
+    });
   
-  
-  constructor(public navCtrl: NavController,public params: NavParams) {
+  constructor(public navCtrl: NavController, public params: NavParams, private firebaseAnalytics: FirebaseAnalytics, public loadingCtrl: LoadingController) {
+    //Analytics
+    this.firebaseAnalytics.logEvent('page_view', {page: "detail"})
+    .then((res: any) => console.log(res))
+    .catch((error: any) => console.error(error));
+    this.infoLabel = "test";
     this.start = params.get('start');
     this.end= params.get('end');
     this.travelMode = params.get('travelMode');
@@ -43,20 +52,6 @@ export class HomePage {
    
     this.directionsDisplay.setMap(this.map);
   } 
-
-  travelClick(type){
-    this.travelMode = type;
-  }
-
-  buttonClick() {
-    if (this.start === "") {
-        this.displayAlert('Veuillez choisir une ville de départ');  
-    } else if (this.end === "") {
-        this.displayAlert('Veuillez choisir une ville d\'arrivée'); 
-    } else {
-        this.calculateAndDisplayRoute();
-    }        
-  }
         
   calculateAndDisplayRoute() {
     this.loading(true);
@@ -65,26 +60,16 @@ export class HomePage {
       destination: this.end,
       travelMode: this.travelMode
     }, (response, status) => {
-    
-        switch (status) {
-            case 'OK': 
+        this.loading(false);
+        if (status == "OK") {
             this.directionsDisplay.setDirections(response);
             this.calculateDistanceAndTime()
-            break
             
-            case 'NOT_FOUND':
-            this.displayAlert('L\'une des villes est introuvable');
-            break
-          
-            case 'ZERO_RESULT':
-            this.displayAlert('Itinéraire introuvable');
-            break
-            
-            default:
-            this.displayAlert('Erreur inconnue ' + status);
-            break
-        }      
-        this.loading(false);
+        } else {
+            this.displayAlert('Erreur:' + status);
+            this.navCtrl.pop();
+        }     
+        
     });
   }
   
@@ -121,6 +106,11 @@ export class HomePage {
   }
   
   loading(on:Boolean) {
+    if (on) {
+        this.loader.present();
+    } else {
+        this.loader.dismiss();
+    }
   }
 
 }

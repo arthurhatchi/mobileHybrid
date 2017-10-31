@@ -1,0 +1,8 @@
+{
+    "FirebaseAnalytics": {
+        "name": "FirebaseAnalytics",
+        "type": "podspec",
+        "spec": "~> 4.0",
+        "count": 1
+    }
+}
