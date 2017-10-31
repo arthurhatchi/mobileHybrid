@@ -4,6 +4,7 @@ import { NavController } from 'ionic-angular';
 import { NavParams } from 'ionic-angular';
 import { FirebaseAnalytics } from '@ionic-native/firebase-analytics';
 import { LoadingController } from 'ionic-angular';
+import { Geolocation } from '@ionic-native/geolocation';
 
 declare var google;
 
@@ -21,6 +22,8 @@ export class HomePage {
   start;
   end;
   travelMode;
+  located;
+  latLng = google.maps.LatLng(0.0, 0.0);
   directionsService = new google.maps.DirectionsService;
   directionsDisplay = new google.maps.DirectionsRenderer;
   service = new google.maps.DistanceMatrixService();
@@ -28,17 +31,20 @@ export class HomePage {
         content: 'Please wait...'
     });
   
-  constructor(public navCtrl: NavController, public params: NavParams, private firebaseAnalytics: FirebaseAnalytics, public loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, public params: NavParams, private firebaseAnalytics: FirebaseAnalytics, public loadingCtrl: LoadingController, private geolocation: Geolocation) {
     //Analytics
     this.firebaseAnalytics.logEvent('page_view', {page: "detail"})
     .then((res: any) => console.log(res))
     .catch((error: any) => console.error(error));
-    this.infoLabel = "test";
+    
     this.start = params.get('start');
-    this.end= params.get('end');
+    this.end = params.get('end');
     this.travelMode = params.get('travelMode');
-    this.calculateAndDisplayRoute();
+    this.located = params.get('located');
+    this.latLng = params.get('LatLng');
+    this.calculateAndDisplayRoute();  
   }
+  
 
   ionViewDidLoad(){
     this.initMap();
@@ -55,17 +61,33 @@ export class HomePage {
         
   calculateAndDisplayRoute() {
     this.loading(true);
+    var init;
+    var dest;
+    
+    if (this.located) {
+        if  (this.start == "Ma position") {
+            init = this.latLng;
+        } else {
+            init = this.start;
+        }
+
+        if ( this.end == "Ma position") {
+            dest = this.latLng;
+        } else {
+            dest = this.end;
+        }
+    }
     this.directionsService.route({
-      origin: this.start,
-      destination: this.end,
+      origin: init,
+      destination: dest,
       travelMode: this.travelMode
     }, (response, status) => {
-        this.loading(false);
         if (status == "OK") {
             this.directionsDisplay.setDirections(response);
             this.calculateDistanceAndTime()
-            
+            this.loading(false);
         } else {
+            this.loading(false);
             this.displayAlert('Erreur:' + status);
             this.navCtrl.pop();
         }     
@@ -92,11 +114,13 @@ export class HomePage {
                 var duration = element.duration.text;
                 var from = origins[i];
                 var to = destinations[j];
-                this.displayAlert('Distance: ' + distance + ', durée du trajet: ' + duration);
+                document.getElementById('infoLabel').textContent = 'Distance: ' + distance + '\nDurée du trajet: ' + duration;
+                //this.displayAlert('Distance: ' + distance + ', durée du trajet: ' + duration);
               }
             }
           } else {
-            this.displayAlert('Distance introuvable');
+            document.getElementById('infoLabel').textContent = 'Aucune information sur le trajet';
+            this.displayAlert('Distance introuvable'); 
           }
       });
   }
@@ -111,6 +135,10 @@ export class HomePage {
     } else {
         this.loader.dismiss();
     }
+  }
+  
+  buttonClick() {
+  
   }
 
 }

@@ -1,11 +1,11 @@
 page-home {
     
   #floating-panel {      
-    position: absolute;
+   //  position: absolute;
   //  top: 0px;
   //  right: 0px;
 //    z-index: 5;
-      //background-color: #fff;
+      background-color: transparent;
   //  padding: 5px;
     //border: 1px solid #999;
   //  text-align: center;
@@ -14,30 +14,27 @@ page-home {
 //    padding-left: 5px;
   //  border-radius: 50px;
   }
+  #infoLabel {
+      
+      bottom: 100px;
+    font-size: 10px;
+    color: black;
+      background-color: white;
+  }
+    
+    #button {
+        bottom: 100px;
+       
+    }    
+    
   #map {
     height: 100%;
     top: 0px;
     bottom: 0px;
+     // border-bottom: -20px;
   }
 
-  #direction{
-    margin-left: 25%;
-    font-size: 40px;
-    color: red;
-    position: relative;
-    top: 50%;
-    transform: translateY(-34%);
-  }
 
-  .start{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-
-  .end{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
 
 
 }

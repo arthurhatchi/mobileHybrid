@@ -31,14 +31,14 @@
           <ion-item class="start">
               <ion-label fixed>Départ</ion-label>
               <ion-input type="text" id="start" [(ngModel)]="start"></ion-input>
-              <button ion-button clear color="dark" type="button" item-right (click)="travelClick('DRIVING')">
+              <button ion-button clear color="dark" type="button" item-right (click)="locateUserStart()">
                   <ion-icon class="material-icons" item-right>my_location</ion-icon>
               </button>
           </ion-item>
           <ion-item class="end">
               <ion-label fixed>Arrivée</ion-label>
               <ion-input type="text" id="end" [(ngModel)]="destination"></ion-input>
-              <button ion-button clear color="dark" type="button" item-right (click)="travelClick('DRIVING')">
+              <button ion-button clear color="dark" type="button" item-right (click)="locateUserEnd()">
                   <ion-icon class="material-icons" item-right>my_location</ion-icon>
               </button>
         </ion-item>

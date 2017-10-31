@@ -25513,33 +25513,24 @@ ion-navbar.toolbar {
 }
 
 page-home #floating-panel {
-  position: absolute;
+  background-color: transparent;
+}
+
+page-home #infoLabel {
+  bottom: 100px;
+  font-size: 10px;
+  color: black;
+  background-color: white;
+}
+
+page-home #button {
+  bottom: 100px;
 }
 
 page-home #map {
   height: 100%;
   top: 0px;
   bottom: 0px;
-}
-
-page-home #direction {
-  margin-left: 25%;
-  font-size: 40px;
-  color: red;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-34%);
-  transform: translateY(-34%);
-}
-
-page-home .start {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-page-home .end {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 IndexPage .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, IndexPage .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {

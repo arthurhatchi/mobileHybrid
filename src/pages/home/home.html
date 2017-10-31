@@ -1,45 +1,24 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Itinéraire
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <div>
-      <div id="floating-panel">
-          <ion-item>
-              <ion-label>Start Time</ion-label>
-          </ion-item>
-<!--
-        <ion-item class="start">
-            <ion-label fixed>Départ</ion-label>
-            <ion-input type="text" id="start" [(ngModel)]="start"></ion-input>
-            <button ion-button clear color="dark" type="button" item-right (click)="travelClick('DRIVING')">
-                <ion-icon class="material-icons" item-right>my_location</ion-icon>
-            </button>
-        </ion-item>
-        <ion-item class="end">
-            <ion-label fixed>Arrivée</ion-label>
-            <ion-input type="text" id="end" [(ngModel)]="end"></ion-input>
-            <button ion-button clear color="dark" type="button" item-right (click)="travelClick('DRIVING')">
-                <ion-icon class="material-icons" item-right>my_location</ion-icon>
-            </button>
-      </ion-item>
-    <ion-row >
-        <ion-col text-center>
-            <div class="btn-group" >
-                <button ion-button class="btn btn-primary" value="walk" (click)="travelClick('WALKING')"><i class="material-icons">directions_walk</i></button>
-                <button ion-button class="btn btn-primary" value="walk" (click)="travelClick('BICYCLING')"><i class="material-icons">directions_bike</i></button>
-                <button ion-button class="btn btn-primary" value="walk" (click)="travelClick('TRANSIT')"><i class="material-icons">directions_transit</i></button>
-                <button ion-button class="btn btn-primary" value="walk" (click)="travelClick('DRIVING')"><i class="material-icons">directions_car</i></button>
-            </div>     
-            <i class="material-icons" id="direction" (click)="buttonClick($event)">directions</i>
-        </ion-col>
-      </ion-row>
--->
-    </div>
+    
+  <div #map id="map">
+<!--      <div id="floating-panel">-->
+        
+          
+
+          
+<!--  </div>-->
+       
   </div>
-    <div #map id="map"></div>
+<ion-label id="infoLabel">Chargement des informations..</ion-label>
+             
+          
+    <button ion-button round id="button" (click)="buttonClick()">Partager l'itinéraire</button>
 </ion-content>
