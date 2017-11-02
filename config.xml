@@ -78,7 +78,7 @@
     </platform>
     <engine name="android" spec="^6.3.0" />
     <engine name="browser" spec="^4.1.0" />
-    <engine name="ios" spec="^4.5.2" />
+    <engine name="ios" spec="^4.5.3" />
     <plugin name="cordova-plugin-device" spec="^1.1.6" />
     <plugin name="cordova-plugin-firebase-analytics" spec="^0.11.0" />
     <plugin name="cordova-plugin-geolocation" spec="^2.4.3">

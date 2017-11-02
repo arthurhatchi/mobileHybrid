@@ -61,21 +61,17 @@ export class HomePage {
         
   calculateAndDisplayRoute() {
     this.loading(true);
-    var init;
-    var dest;
+    var init = this.start;
+    var dest = this.end;
     
     if (this.located) {
         if  (this.start == "Ma position") {
             init = this.latLng;
-        } else {
-            init = this.start;
-        }
+        } 
 
         if ( this.end == "Ma position") {
             dest = this.latLng;
-        } else {
-            dest = this.end;
-        }
+        } 
     }
     this.directionsService.route({
       origin: init,

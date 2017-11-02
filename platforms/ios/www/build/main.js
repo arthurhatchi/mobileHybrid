@@ -22,11 +22,11 @@ webpackEmptyAsyncContext.id = 110;
 
 var map = {
 	"../pages/home/home.module": [
-		264,
+		265,
 		1
 	],
 	"../pages/index/index.module": [
-		265,
+		264,
 		0
 	]
 };
@@ -108,20 +108,14 @@ var HomePage = (function () {
     HomePage.prototype.calculateAndDisplayRoute = function () {
         var _this = this;
         this.loading(true);
-        var init;
-        var dest;
+        var init = this.start;
+        var dest = this.end;
         if (this.located) {
             if (this.start == "Ma position") {
                 init = this.latLng;
             }
-            else {
-                init = this.start;
-            }
             if (this.end == "Ma position") {
                 dest = this.latLng;
-            }
-            else {
-                dest = this.end;
             }
         }
         this.directionsService.route({
@@ -191,7 +185,7 @@ __decorate([
 ], HomePage.prototype, "mapElement", void 0);
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/arthurhatchiguian/Desktop/git mobile/mobileHybrid/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Itinéraire\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n    \n  <div #map id="map">\n<!--      <div id="floating-panel">-->\n        \n          \n\n          \n<!--  </div>-->\n       \n  </div>\n<ion-label id="infoLabel">Chargement des informations..</ion-label>\n             \n          \n    <button ion-button round id="button" (click)="buttonClick()">Afficher la VR</button>\n</ion-content>\n'/*ion-inline-end:"/Users/arthurhatchiguian/Desktop/git mobile/mobileHybrid/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Itinéraire\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n    \n  <div #map id="map">\n<!--      <div id="floating-panel">-->\n        \n          \n\n          \n<!--  </div>-->\n       \n  </div>\n<ion-label id="infoLabel">Chargement des informations..</ion-label>\n             \n          \n    <button ion-button round id="button" (click)="buttonClick()">Partager l\'itinéraire</button>\n</ion-content>\n'/*ion-inline-end:"/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_firebase_analytics__["a" /* FirebaseAnalytics */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */]])
 ], HomePage);
@@ -258,8 +252,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/index/index.module#IndexPageModule', name: 'IndexPage', segment: 'index', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/index/index.module#IndexPageModule', name: 'IndexPage', segment: 'index', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] }
                 ]
             })
         ],
@@ -317,7 +311,7 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/arthurhatchiguian/Desktop/git mobile/mobileHybrid/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/arthurhatchiguian/Desktop/git mobile/mobileHybrid/src/app/app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/src/app/app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);

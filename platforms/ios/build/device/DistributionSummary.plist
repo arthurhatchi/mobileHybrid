@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MyApp.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>84B642F56EE3C7C619D7BB5AD4512D3FAF9D106C</string>
+				<key>dateExpires</key>
+				<string>26/04/2018</string>
+				<key>type</key>
+				<string>iOS Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>B59R52GQM2.io.ionic.starter</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>B59R52GQM2</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>MyApp.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>3b2f13e3-a5dc-4ddb-846c-d1c65363ffe7</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>B59R52GQM2</string>
+				<key>name</key>
+				<string>GREEN PANDA</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,10 +7,14 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
         "cordova-plugin-firebase-analytics": {
             "PACKAGE_NAME": "io.ionic.starter"
         },
-        "cordova-plugin-device": {
+        "cordova-plugin-geolocation": {
+            "GEOLOCATION_USAGE_DESCRIPTION": "To locate you",
             "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-ionic-webview": {
@@ -27,14 +31,13 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "io.ionic.starter"
-        },
-        "cordova-plugin-geolocation": {
-            "GEOLOCATION_USAGE_DESCRIPTION": "To locate you",
-            "PACKAGE_NAME": "io.ionic.starter"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-support-google-services": {
             "PACKAGE_NAME": "io.ionic.starter"
         }
     }
