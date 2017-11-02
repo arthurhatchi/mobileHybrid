@@ -69,7 +69,7 @@ export class HomePage {
             init = this.latLng;
         } 
 
-        if ( this.end == "Ma position") {
+        if (this.end == "Ma position") {
             dest = this.latLng;
         } 
     }
@@ -134,7 +134,7 @@ export class HomePage {
   }
   
   buttonClick() {
-  
+    
   }
 
 }

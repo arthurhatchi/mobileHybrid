@@ -22,11 +22,11 @@ webpackEmptyAsyncContext.id = 110;
 
 var map = {
 	"../pages/home/home.module": [
-		264,
+		265,
 		1
 	],
 	"../pages/index/index.module": [
-		265,
+		264,
 		0
 	]
 };
@@ -108,20 +108,14 @@ var HomePage = (function () {
     HomePage.prototype.calculateAndDisplayRoute = function () {
         var _this = this;
         this.loading(true);
-        var init;
-        var dest;
+        var init = this.start;
+        var dest = this.end;
         if (this.located) {
             if (this.start == "Ma position") {
                 init = this.latLng;
             }
-            else {
-                init = this.start;
-            }
             if (this.end == "Ma position") {
                 dest = this.latLng;
-            }
-            else {
-                dest = this.end;
             }
         }
         this.directionsService.route({
@@ -258,8 +252,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/index/index.module#IndexPageModule', name: 'IndexPage', segment: 'index', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/index/index.module#IndexPageModule', name: 'IndexPage', segment: 'index', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] }
                 ]
             })
         ],

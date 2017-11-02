@@ -20,6 +20,7 @@
         "@angular/http": "4.4.3",
         "@angular/platform-browser": "4.4.3",
         "@angular/platform-browser-dynamic": "4.4.3",
+        "@ionic-native/contacts": "^4.3.3",
         "@ionic-native/core": "4.3.0",
         "@ionic-native/firebase-analytics": "^4.3.2",
         "@ionic-native/geolocation": "^4.3.2",
@@ -30,6 +31,7 @@
         "cordova-browser": "^4.1.0",
         "cordova-ios": "^4.5.3",
         "cordova-plugin-compat": "^1.2.0",
+        "cordova-plugin-contacts": "^2.3.1",
         "cordova-plugin-device": "^1.1.6",
         "cordova-plugin-firebase-analytics": "^0.11.0",
         "cordova-plugin-geolocation": "^2.4.3",
@@ -62,6 +64,9 @@
             "ionic-plugin-keyboard": {},
             "cordova-plugin-geolocation": {
                 "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
+            },
+            "cordova-plugin-contacts": {
+                "CONTACTS_USAGE_DESCRIPTION": " "
             }
         },
         "platforms": [

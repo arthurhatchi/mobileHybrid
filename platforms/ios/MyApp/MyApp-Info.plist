@@ -64,5 +64,7 @@
     <string>CDVLaunchScreen</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>To locate you</string>
+    <key>NSContactsUsageDescription</key>
+    <string/>
   </dict>
 </plist>
