@@ -5,7 +5,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>English</string>
     <key>CFBundleDisplayName</key>
-    <string>MyApp</string>
+    <string>${PRODUCT_NAME}</string>
     <key>CFBundleExecutable</key>
     <string>${EXECUTABLE_NAME}</string>
     <key>CFBundleIcons</key>
@@ -62,9 +62,9 @@
     </dict>
     <key>UILaunchStoryboardName</key>
     <string>CDVLaunchScreen</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>To locate you</string>
     <key>NSContactsUsageDescription</key>
     <string/>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>To locate you</string>
   </dict>
 </plist>

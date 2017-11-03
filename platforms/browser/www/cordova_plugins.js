@@ -143,22 +143,6 @@ module.exports = [
         "merges": [
             "navigator.contacts"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-fcm/www/FCMPlugin.js",
-        "id": "cordova-plugin-fcm.FCMPlugin",
-        "pluginId": "cordova-plugin-fcm",
-        "clobbers": [
-            "FCMPlugin"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-firebase/www/firebase-browser.js",
-        "id": "cordova-plugin-firebase.FirebasePlugin",
-        "pluginId": "cordova-plugin-firebase",
-        "clobbers": [
-            "FirebasePlugin"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -174,9 +158,7 @@ module.exports.metadata =
     "ionic-plugin-keyboard": "2.2.1",
     "cordova-plugin-compat": "1.2.0",
     "cordova-plugin-geolocation": "2.4.3",
-    "cordova-plugin-contacts": "2.3.1",
-    "cordova-plugin-fcm": "2.1.2",
-    "cordova-plugin-firebase": "0.1.24"
+    "cordova-plugin-contacts": "2.3.1"
 }
 // BOTTOM OF METADATA
 });
