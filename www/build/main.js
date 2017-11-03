@@ -306,16 +306,6 @@ var MyApp = (function () {
             // Here you can do any higher level native things you might need.
             statusBar.styleDefault();
             splashScreen.hide();
-            FCMPlugin.getToken(function (t) {
-                console.log(t);
-            }, function (e) {
-                console.log(e);
-            });
-            FCMPlugin.onNotification(function (data) {
-                console.log(data);
-            }, function (e) {
-                console.log(e);
-            });
         });
     }
     return MyApp;

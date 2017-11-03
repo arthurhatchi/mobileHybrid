@@ -5,8 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { IndexPage } from '../pages/index';
 
-declare var FCMPlugin;
-
 @Component({
   templateUrl: 'app.html'
 })
@@ -19,23 +17,8 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-        FCMPlugin.getToken(
-          (t) => {
-            console.log(t);
-          },
-          (e) => {
-            console.log(e);
-          }
-        );
-
-        FCMPlugin.onNotification(
-          (data) => {
-            console.log(data);
-          },
-          (e) => {
-            console.log(e);
-          }
-        );
+        
+    
     });
   }
 }
