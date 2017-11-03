@@ -5,6 +5,7 @@ import { NavParams } from 'ionic-angular';
 import { FirebaseAnalytics } from '@ionic-native/firebase-analytics';
 import { LoadingController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
+import { Firebase } from '@ionic-native/firebase';
 
 declare var google;
 
