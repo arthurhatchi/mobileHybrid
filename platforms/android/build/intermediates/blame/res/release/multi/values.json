@@ -1,0 +1,254 @@
+[
+    {
+        "outputFile": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 67,
+                    "endOffset": 168
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 276,
+                        "endColumn": 63,
+                        "endOffset": 339
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 173,
+                    "endColumn": 63,
+                    "endOffset": 232
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 157,
+                        "endColumn": 63,
+                        "endOffset": 216
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 237,
+                    "endColumn": 42,
+                    "endOffset": 275
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/res/values/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 42,
+                        "endOffset": 93
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 280,
+                    "endColumn": 166,
+                    "endOffset": 442
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/res/values/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 439,
+                        "endColumn": 166,
+                        "endOffset": 605
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 447,
+                    "endColumn": 143,
+                    "endOffset": 586
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/generated/res/google-services/release/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 143,
+                        "endOffset": 194
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 591,
+                    "endColumn": 111,
+                    "endOffset": 698
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/generated/res/google-services/release/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 199,
+                        "endColumn": 111,
+                        "endOffset": 306
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 703,
+                    "endColumn": 81,
+                    "endOffset": 780
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/generated/res/google-services/release/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 311,
+                        "endColumn": 81,
+                        "endOffset": 388
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 785,
+                    "endColumn": 103,
+                    "endOffset": 884
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/generated/res/google-services/release/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 393,
+                        "endColumn": 103,
+                        "endOffset": 492
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 889,
+                    "endColumn": 102,
+                    "endOffset": 987
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/generated/res/google-services/release/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 497,
+                        "endColumn": 102,
+                        "endOffset": 595
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 992,
+                    "endColumn": 119,
+                    "endOffset": 1107
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/generated/res/google-services/release/values/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 600,
+                        "endColumn": 119,
+                        "endOffset": 715
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1112,
+                    "endColumn": 100,
+                    "endOffset": 1208
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/generated/res/google-services/release/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 720,
+                        "endColumn": 100,
+                        "endOffset": 816
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1213,
+                    "endColumn": 58,
+                    "endOffset": 1267
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 98,
+                        "endColumn": 58,
+                        "endOffset": 152
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1272,
+                    "endColumn": 77,
+                    "endOffset": 1345
+                },
+                "from": {
+                    "file": "/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/generated/res/google-services/release/values/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 821,
+                        "endColumn": 77,
+                        "endOffset": 894
+                    }
+                }
+            }
+        ]
+    }
+]

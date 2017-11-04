@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.google.firebase-firebase-analytics-11.0.4_2a9b91ed2e3c12f211cf3d23707bfba23863b84d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/support-annotations-25.2.0_9be091d5915e69084737a433c716b39a9add55aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.android.support-support-v4-25.2.0_06ef0949e104aaa204ef273b7a9c56723e67c307.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.android.support-support-core-utils-25.2.0_0f4f684dde59dd4b7f70ab662caaecdffe241ee7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-tasks-11.0.4_6655c7a6480446533696dd3ad92f46b5d5265aa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.android.support-support-compat-25.2.0_248d1de4998ecf4f497e6ba71f1d5e407bb12e01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.android.support-support-fragment-25.2.0_c6b833df66d43526f088afefa7851a60fa97f365.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.android.support-support-core-ui-25.2.0_c8575b791f8da3551879d9e1494f858a4a70482c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.google.firebase-firebase-analytics-impl-11.0.4_b7efcc9eeb18dfd21d616e6fbb5a38377d92e62b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.google.firebase/firebase-common/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.google.firebase-firebase-common-11.0.4_a89246e56c388a25431479a703ff1a1e8c788882.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.google.firebase-firebase-iid-11.0.4_4eaf9946bbb70fba0feb6c88be6ce0c53ce2baaa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.android.support-support-media-compat-25.2.0_5d748c3663deac2952a7d8d45024089065ec114b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-basement-11.0.4_a865df262de536b19b5db9bf9db02713d6c707cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/exploded-aar/org.apache.cordova/CordovaLib/6.2.3/release/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.0"
+        sha1="71d115ab5884732363cd272346b246a5efb54f5c">
+        <dex dex="/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/pre-dexed/release/CordovaLib-6.2.3-release_c8e87fe84811265ce9d8b0c7c7316e2d510c68f7.jar" />
+    </item>
+
+</items>

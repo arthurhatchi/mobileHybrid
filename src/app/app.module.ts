@@ -6,7 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { FirebaseAnalytics } from '@ionic-native/firebase-analytics';
 import { MyApp } from './app.component';
 import { Geolocation } from '@ionic-native/geolocation';
-
+import { SocialSharing } from '@ionic-native/social-sharing';
 import { HomePage } from '../pages/home/home';
 
 @NgModule({
@@ -28,6 +28,7 @@ import { HomePage } from '../pages/home/home';
     SplashScreen,
     FirebaseAnalytics,
     Geolocation,
+    SocialSharing,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -21,10 +21,8 @@ apply plugin: 'com.android.application'
 
 buildscript {
     repositories {
+        mavenCentral()
         jcenter()
-        maven {
-            url "https://maven.google.com"
-        }
     }
 
     // Switch the Android Gradle plugin version requirement depending on the
@@ -39,10 +37,8 @@ buildscript {
 // Allow plugins to declare Maven dependencies via build-extras.gradle.
 allprojects {
     repositories {
+        mavenCentral();
         jcenter()
-        maven {
-            url "https://maven.google.com"
-        }
     }
 }
 
@@ -255,6 +251,7 @@ dependencies {
     debugCompile(project(path: "CordovaLib", configuration: "debug"))
     releaseCompile(project(path: "CordovaLib", configuration: "release"))
     compile "com.google.firebase:firebase-core:11.0.+"
+    compile "com.android.support:support-v4:24.1.1+"
     // SUB-PROJECT DEPENDENCIES END
 }
 

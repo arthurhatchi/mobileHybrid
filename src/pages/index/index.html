@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>index</ion-title>
+    <ion-title>Trouver mon itinéraire</ion-title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -50,12 +50,12 @@
                   <button ion-button class="btn btn-primary" value="walk" (click)="travelClick('TRANSIT')"><i class="material-icons">directions_transit</i></button>
                   <button ion-button class="btn btn-primary" value="walk" (click)="travelClick('DRIVING')"><i class="material-icons">directions_car</i></button>
               </div>     
-              <i class="material-icons" id="direction" (click)="directionClick($event)">directions</i>
+              
+              
+<!--              <i class="material-icons"  id="direction" (click)="directionClick($event)">directions</i>-->
           </ion-col>
+          <button ion-button round id="direction" (click)="directionClick($event)">Rechercher</button>
         </ion-row>
       </div>
     </div>
-  <p>
-    selected: {{travelMode}}
-  </p>
 </ion-content>

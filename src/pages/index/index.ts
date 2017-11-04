@@ -5,12 +5,6 @@ import { FirebaseAnalytics } from '@ionic-native/firebase-analytics';
 import { Geolocation } from '@ionic-native/geolocation';
 import { LoadingController } from 'ionic-angular';
 
-/**
- * Generated class for the IndexPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 declare var google;
 
@@ -21,15 +15,15 @@ declare var google;
 })
 export class IndexPage {
   travelMode = "DRIVING";
-  start = "nice";
-  destination = "nanterre";
+  start = "Paris";
+  destination = "Marseille";
   loader = this.loadingCtrl.create({
         content: 'Please wait...'
     }); 
     located = false;
   latLng = new google.maps.LatLng(0.0, 0.0);
   constructor(private firebaseAnalytics: FirebaseAnalytics, public navCtrl: NavController, public navParams: NavParams, private geolocation: Geolocation, public loadingCtrl: LoadingController) {
-  
+        
   }
 
   travelClick(type){

@@ -33,6 +33,12 @@
         },
         "cordova-plugin-contacts": {
             "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-sms-plugin": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "io.ionic.starter"
         }
     },
     "dependent_plugins": {
@@ -40,6 +46,9 @@
             "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "es6-promise-plugin": {
             "PACKAGE_NAME": "io.ionic.starter"
         }
     }

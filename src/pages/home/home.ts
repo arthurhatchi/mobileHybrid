@@ -6,8 +6,11 @@ import { FirebaseAnalytics } from '@ionic-native/firebase-analytics';
 import { LoadingController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Firebase } from '@ionic-native/firebase';
+import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 declare var google;
+declare var window;
 
 @IonicPage()
 @Component({
@@ -31,8 +34,8 @@ export class HomePage {
   loader = this.loadingCtrl.create({
         content: 'Please wait...'
     });
-  
-  constructor(public navCtrl: NavController, public params: NavParams, private firebaseAnalytics: FirebaseAnalytics, public loadingCtrl: LoadingController, private geolocation: Geolocation) {
+
+  constructor(public navCtrl: NavController, public params: NavParams, private firebaseAnalytics: FirebaseAnalytics, public loadingCtrl: LoadingController, private geolocation: Geolocation, private socialSharing: SocialSharing) {
     //Analytics
     this.firebaseAnalytics.logEvent('page_view', {page: "detail"})
     .then((res: any) => console.log(res))
@@ -43,7 +46,7 @@ export class HomePage {
     this.travelMode = params.get('travelMode');
     this.located = params.get('located');
     this.latLng = params.get('LatLng');
-    this.calculateAndDisplayRoute();  
+    this.calculateAndDisplayRoute(); 
   }
   
 
@@ -135,7 +138,15 @@ export class HomePage {
   }
   
   buttonClick() {
+    this.loading(true);
+    var url = 'https://www.google.com/maps/dir/?api=1&origin='+ this.start +'&destination='+this.end +'&travelmode='+ this.travelMode;
     
+    var text = 'Je pars de ' + this.start + ' et je vais à ' + this.end + '. Infos: ' + document.getElementById('infoLabel').textContent + ':  ' + url; 
+    this.socialSharing.share(text, 'Mon initéraire', null).then(() => {
+            this.loading(false);
+    }).catch(() => {
+            this.loading(false);
+    });
   }
 
 }
