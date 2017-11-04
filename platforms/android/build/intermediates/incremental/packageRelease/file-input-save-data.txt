@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Nov 04 21:07:01 CET 2017
+#Sat Nov 04 22:02:01 CET 2017
 76.base=/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/assets/release
 5.base=/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/assets/release
 91.file=/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/platforms/android/build/intermediates/assets/release/www/assets/fonts/roboto-light.woff

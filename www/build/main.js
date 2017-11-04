@@ -181,8 +181,16 @@ var HomePage = (function () {
     HomePage.prototype.buttonClick = function () {
         var _this = this;
         this.loading(true);
-        var url = 'https://www.google.com/maps/dir/?api=1&origin=' + this.start + '&destination=' + this.end + '&travelmode=' + this.travelMode;
-        var text = 'Je pars de ' + this.start + ' et je vais à ' + this.end + '. Infos: ' + document.getElementById('infoLabel').textContent + ':  ' + url;
+        var myStart = this.start;
+        var myEnd = this.end;
+        if (myStart == "Ma position") {
+            myStart = "Ma+position";
+        }
+        if (myEnd == "Ma position") {
+            myEnd = "Ma+position";
+        }
+        var url = 'https://www.google.com/maps/dir/?api=1&origin=' + myStart + '&destination=' + myEnd + '&travelmode=' + this.travelMode;
+        var text = 'Je pars de ' + this.start + ' et je vais à ' + this.end + ' ' + url;
         this.socialSharing.share(text, 'Mon initéraire', null).then(function () {
             _this.loading(false);
         }).catch(function () {

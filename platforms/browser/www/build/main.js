@@ -179,10 +179,20 @@ var HomePage = (function () {
         }
     };
     HomePage.prototype.buttonClick = function () {
-        this.socialSharing.share('Body', 'Subject', ['recipient@example.org']).then(function () {
-            // Success!
+        var _this = this;
+        this.loading(true);
+        if (this.start == 'Ma Position') {
+            this.start = 'Ma+Position';
+        }
+        else if (this.end == 'Ma Position') {
+            this.end = 'Ma+Position';
+        }
+        var url = 'https://www.google.com/maps/dir/?api=1&origin=' + this.start + '&destination=' + this.end + '&travelmode=' + this.travelMode;
+        var text = 'Je pars de ' + this.start + ' et je vais à ' + this.end + '. Infos: ' + document.getElementById('infoLabel').textContent + ':  ' + url;
+        this.socialSharing.share(text, 'Mon initéraire', null).then(function () {
+            _this.loading(false);
         }).catch(function () {
-            // Error!
+            _this.loading(false);
         });
     };
     return HomePage;
@@ -193,7 +203,7 @@ __decorate([
 ], HomePage.prototype, "mapElement", void 0);
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/src/pages/home/home.html"*/'<script src="cordova.js"></script>\n<ion-header>\n  <ion-navbar>\n    <ion-title id="infoLabel">\n      Chargement des informations..\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n    \n  <div #map id="map">\n<!--      <div id="floating-panel">-->\n        \n          \n\n          \n<!--  </div>-->\n       \n  </div>\n    \n\n    <div class="card">\n        <div class="item item-text-wrap">\n            <button class="button button-light">\n                <i class="icon ion-social-whatsapp">\n                </i>\n            </button>\n        </div> \n    </div>\n             \n          \n    <button ion-button round id="button" (click)="buttonClick()">Partager l\'itinéraire</button>\n</ion-content>\n'/*ion-inline-end:"/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/src/pages/home/home.html"*/'\n<ion-header>\n  <ion-navbar>\n    <ion-title id="infoLabel">\n        Information non disponible\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>    \n  <div #map id="map">\n  </div>\n<button ion-button round id="button" (click)="buttonClick()">Partager l\'itinéraire</button>\n</ion-content>\n'/*ion-inline-end:"/Users/arthurhatchiguian/Desktop/Epitech/mobile hybrid/mobileHybrid/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_firebase_analytics__["a" /* FirebaseAnalytics */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_social_sharing__["a" /* SocialSharing */]])
 ], HomePage);
